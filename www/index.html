@@ -3,40 +3,27 @@
 <head>
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css"/>
 
-   <!--
-
-   <script type="text/template" id="page1">
-
-    <script type="text/template" id="page2">
-
-        <div data-role="header">
-            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
-            <h1>Page 2</h1>
-        </div>
-
-        <div data-role="content">
-            <p>This is Page 2. It was created dynamically using an underscore.js template.</p>
-            <p>Navigate to:</p>
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#">Home</a></li>
-                <li><a href="#page1">Page 1</a></li>
-            </ul>
-        </div>
-
-    </script>
-
-    <!-- The Scripts
-    <script src="www/javascripts/lib/jquery-1.7.1.min.js"></script>
-    <script src="www/javascripts/jqm-config.js"></script>
-    <script src="www/javascripts/lib/jquery.mobile-1.0.1.min.js"></script>
-    <script src="www/javascripts/lib/underscore-min.js"></script>
-    <script src="www/javascripts/lib/backbone-min.js"></script>
-    <script src="www/javascripts/App.js"></script> -->
+    <!-- The Scripts -->
+    <script src="javascripts/lib/jquery.js"></script>
+    <script src="javascripts/jqm-config.js"></script>
+    <script src="javascripts/lib/jquery.mobile-1.1.0.min.js"></script>
+    <script src="javascripts/lib/underscore-min.js"></script>
+    <script src="javascripts/lib/backbone-min.js"></script>
+    <script src="javascripts/lib/hogan.js"></script>
+    <script src="javascripts/lib/json2.js"></script>
+    <script src="javascripts/lib/cordova-1.9.0.js"></script>
+    <script src="javascripts/models/Template.js"></script>
+    <script src="javascripts/collections/Templates.js"></script>
+    <script src="javascripts/routers/AppRouter.js"></script>
+    <script src="javascripts/views/HomeView.js"></script>
+    <script src="javascripts/views/Page1View.js"></script>
+    <script src="javascripts/views/Page2View.js"></script>
+    <script src="javascripts/App.js"></script>
 </head>
 
-<body>
+<body onload="onBodyLoad()">
 </body>
 
 </html>
