@@ -1,4 +1,5 @@
-window.HomeView = Backbone.View.extend({
+
+/*window.HomeView = Backbone.View.extend({
 
   template:_.template($('#home').html()),
 
@@ -81,3 +82,4 @@ $(document).ready(function () {
   Backbone.history.start();
 });
 
+*/

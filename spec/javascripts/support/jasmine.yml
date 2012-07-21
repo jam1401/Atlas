@@ -11,9 +11,18 @@
 #   - dist/**/*.js
 #
 src_files:
+    - spec/lib/*.js
+    - www/javascripts/lib/underscore.js
+    - www/javascripts/lib/backbone.js
+    - www/javascripts/lib/jquery.js
+    - www/javascripts/jqm-config.js
+    - www/javascripts/lib/jquery.mobile-1.1.0.min.js
+    - www/javascripts/lib/hogan.js
+    - www/javascripts/models/*.js
+    - www/javascripts/collections/*.js
     - www/javascripts/**/*.js
 
-    
+
 # stylesheets
 #
 # Return an array of stylesheet filepaths relative to src_dir to include before jasmine specs.
@@ -64,7 +73,6 @@ spec_files:
 # src_dir: public
 #
 src_dir:
-
 
 # spec_dir
 #

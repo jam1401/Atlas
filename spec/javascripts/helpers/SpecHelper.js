@@ -1,9 +1,11 @@
 beforeEach(function() {
   this.addMatchers({
-    toBePlaying: function(expectedSong) {
-      var player = this.actual;
-      return player.currentlyPlayingSong === expectedSong && 
-             player.isPlaying;
+    toHaveConstructorName: function(expectedName) {
+      var actualName = this.actual.constructorName;
+      this.message = function() {
+        return "Expected object constructor name to be '" + expectedName + "' but was '" + actualName +"'";
+      };
+      return actualName == expectedName;
     }
   });
 });
