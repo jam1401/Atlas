@@ -21,6 +21,8 @@ To run the tests run
 rake jasmine
 ```
 
+And remember 'check your fixtures' before popping your stash!
+
 ## Authors
 
 **Yuri Green**
