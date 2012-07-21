@@ -1,7 +1,6 @@
 (function ($){
   HomeView = Backbone.View.extend({
     constructorName: "HomeView",
-    className: "home-view",
     template: null,
 
     initialize: function() {
