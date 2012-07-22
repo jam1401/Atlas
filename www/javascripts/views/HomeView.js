@@ -8,7 +8,8 @@
     },
 
     render: function() {
-     $(this.el).html(this.template.get("compiled").render());
+     if(this.template.get("compiled"))
+       $(this.el).html(this.template.get("compiled").render());
      return this;
     }
   });

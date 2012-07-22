@@ -16,7 +16,7 @@ describe("Page1View", function() {
 
   it("renders the correct template", function() {
     view.render();
-    console.log($("#jasmine_content").html());
+
     expect(view.$("div[data-role]").length).toEqual(2);
     expect(view.$("div[data-role]").eq(0).data("role")).toEqual("header");
     expect(view.$("div[data-role]").eq(1).data("role")).toEqual("content");
