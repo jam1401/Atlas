@@ -22,5 +22,7 @@ describe("Page2View", function() {
     expect(view.$("div[data-role]").eq(1).data("role")).toEqual("content");
     expect(view.$("ul[data-role]").length).toEqual(1);
     expect(view.$("ul").data("role")).toEqual("listview");
+    expect(view.$("li a").eq(0).text()).toEqual("Home");
+    expect(view.$("li a").eq(1).text()).toEqual("Page 1");
   })
 });
