@@ -49,7 +49,6 @@ Juggernaut.fn.write = function(message){
 
 Juggernaut.fn.subscribe = function(channel, callback){
   if ( !channel ) throw "Must provide a channel";
-
   this.on(channel + ":data", callback);
 
   var connectCallback = this.proxy(function(){

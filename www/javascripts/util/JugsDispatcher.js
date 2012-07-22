@@ -15,7 +15,7 @@
         jugsCallbacks[token] = function(payload) {
           that.processEvent(token, payload);
         };
-          window.jugs.subscribe(token, _.bind(jugsCallbacks[token], this));
+        window.jugs.subscribe(token, jugsCallbacks[token]);
       },
 
       processEvent: function(token, payload) {
@@ -33,8 +33,9 @@
       __reset:function() {
         //for specs
         subscribers = {};
+        jugsCallbacks = {};
       }
     }
-  });
+  })();
 
 })(jQuery);
