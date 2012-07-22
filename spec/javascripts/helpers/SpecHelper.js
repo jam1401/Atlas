@@ -8,4 +8,8 @@ beforeEach(function() {
       return actualName == expectedName;
     }
   });
+  window.location.hash = "";
+  initJugs();
+  clearAjaxRequests();
+  window.templateCache.reset();
 });

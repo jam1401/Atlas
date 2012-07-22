@@ -7,7 +7,7 @@ TDDMobile is a complete mobile application environment which offers the followin
 + Mustache
 + Jquery Mobile
 + PhoneGap
-+ Juggernaut (comming soon)
++ Juggernaut
 
 ## Installation
 

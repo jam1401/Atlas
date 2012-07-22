@@ -18,6 +18,8 @@ src_files:
     - www/javascripts/jqm-config.js
     - www/javascripts/lib/jquery.mobile-1.1.0.min.js
     - www/javascripts/lib/hogan.js
+    - www/javascripts/lib/socket_io.js
+    - www/javascripts/lib/juggernaut.js
     - www/javascripts/models/*.js
     - www/javascripts/collections/*.js
     - www/javascripts/**/*.js

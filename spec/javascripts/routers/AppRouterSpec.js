@@ -13,7 +13,6 @@ describe("AppRouter", function () {
   afterEach(function () {
     router.navigate("?");
     Backbone.history.stop();
-    window.templateCache.reset();
   });
 
   describe("initialize", function () {
