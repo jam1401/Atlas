@@ -1,6 +1,10 @@
 ## Atlas - A cross platform mobile environment for Applications
 
-Atlas is a complete mobile application environment which offers the following features.
+Atlas is a complete mobile application environment which integrates a number of key technologies to create rich mobile applications using HTML5 and Javascript. I draws heavily
+on the excellent work of the [doorisMobile-phonegap](https://github.com/robertkowalski/doorisMobile-phonegap) and
+[backbone-jquerymobile](https://github.com/ccoenraets/backbone-jquerymobile) repos. In bringing the insights from those
+repositories Atlas provides a complete TDD oriented mobile application environment that includes
+
 
 + TDD - Based on Jasmine
 + Backbone
@@ -15,13 +19,18 @@ Atlas is a complete mobile application environment which offers the following fe
 + copy into new repo for your app
 + code!
 
-To run the tests run
+To run the tests make sure you have jasmine installed (gem install jasmine) and run
 
 ```js
 rake jasmine
 ```
-
+Test results can be found by pointing your browser to http://localhost:8888
 And remember 'check your fixtures' before popping your stash!
+
+The environment includes a very simple application (the same app developed in the backbone-jquerymobile repo)
+structured differently to use the model defined by this environment.
+
+
 
 ## Authors
 
