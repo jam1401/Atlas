@@ -1,6 +1,6 @@
-## TDDMobile - A mobile environment for Applications
+## Atlas - A cross platform mobile environment for Applications
 
-TDDMobile is a complete mobile application environment which offers the following features.
+Atlas is a complete mobile application environment which offers the following features.
 
 + TDD - Based on Jasmine
 + Backbone
