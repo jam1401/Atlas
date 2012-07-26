@@ -30,7 +30,9 @@ And remember 'check your fixtures' before popping your stash!
 The environment includes a very simple application (the same app developed in the backbone-jquerymobile repo)
 structured differently to use the model defined by this environment.
 
+## IOS
 
+This is an ISO Sample application in the IOS directory, this can be used with Xcode to demonstrate how Atlas is used with IOS
 
 ## Authors
 

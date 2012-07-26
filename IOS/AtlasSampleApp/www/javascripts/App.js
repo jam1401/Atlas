@@ -4,6 +4,7 @@ function onBodyLoad() {
   } else {
     onDeviceReady();
   }
+ // document.addEventListener("deviceready", onDeviceReady, false);
 }
 
 /* When this function is called, PhoneGap has been initialized and is ready to roll */
@@ -11,6 +12,9 @@ function onBodyLoad() {
  see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
  for more details -jm */
 function onDeviceReady() {
+  // do your thing!
+  //navigator.notification.alert("PhoneGap is working")
+
   console.log('document ready');
   app = new AppRouter();
   Backbone.history.start();
@@ -23,3 +27,4 @@ function preventBehavior(e)
 };
 
 document.addEventListener("touchmove", preventBehavior, false);
+
