@@ -1,5 +1,5 @@
 function onBodyLoad() {
-  if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
+  if (window.cordova && window.device) {
     document.addEventListener("deviceready", onDeviceReady, false);
   } else {
     onDeviceReady();
@@ -11,7 +11,7 @@ function onBodyLoad() {
  see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
  for more details -jm */
 function onDeviceReady() {
-  console.log('document ready');
+  console.log('device ready');
   app = new AppRouter();
   Backbone.history.start();
 }
