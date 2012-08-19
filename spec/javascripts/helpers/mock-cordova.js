@@ -1,7 +1,18 @@
+Connection = {
+  UNKNOWN: "unknown",
+  ETHERNET: "ethernet",
+  WIFI: "wifi",
+  CELL_2G: "2g",
+  CELL_3G: "3g",
+  CELL_4G: "4g",
+  NONE: "none"
+};
+
 jasmine.Cordova = {
   useMock: function(device) {
     window.cordova = cordova;
     window.device = cordova_device;
+    navigator.network = cordova_network;
   },
 
   reset: function() {
@@ -46,15 +57,22 @@ jasmine.Cordova = {
 
   pressSearchButton: function() {
     document.dispatchEvent(searchButton);
+  },
+
+  setConnectionType: function(type) {
+    cordova_network.connection.type = type
   }
 
+};
 
-}
-
-var cordova = {}
+var cordova = {};
 var cordova_device = {
   paused: false,
   online: true
+};
+
+var cordova_network = {
+  connection: {type: Connection.WIFI}
 }
 
 // Cordova Events
