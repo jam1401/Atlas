@@ -11,7 +11,8 @@ repositories Atlas provides a complete TDD oriented mobile application environme
 + Mustache
 + Jquery Mobile
 + PhoneGap
-+ Juggernaut
++ Server Push (e.g. Juggernaut)
++ Lawnchair Local storage
 
 ## Installation
 
@@ -25,7 +26,8 @@ To run the tests make sure you have jasmine installed (gem install jasmine) and 
 rake jasmine
 ```
 Test results can be found by pointing your browser to http://localhost:8888
-And remember 'check your fixtures' before popping your stash!
+
+Jasmine works better with rvm installed however if RVM is not install then you need to do ```js sudo gem install Jasmine ```. If RVM is installed you dont need the sudo as a local gemset will be created.
 
 The environment includes a very simple application (the same app developed in the backbone-jquerymobile repo)
 structured differently to use the model defined by this environment.
